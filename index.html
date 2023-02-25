@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deo Web Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo.png" alt="" width="80px" /></a>
+      </div>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Clients</a></li>
+        </ul>
+      </nav>
+      <img
+        src="img/menu.png"
+        class="menu"
+        width="25px"
+        onclick="menutoggle()"
+      />
+    </div>
+
+    <header>
+      <div class="row">
+        <div class="col-2">
+          <h1>Web Design Agency</h1>
+          <h3>
+            Get a solid website with everything in place to drive more traffic
+            and turn visitors into customers
+          </h3>
+          <br />
+          <p>
+            As a web design agency, we adopt a holistic, content-driven approach
+            to design intuitive experiences that keep visitors glued to your
+            website and turn them into returning customers.
+          </p>
+        </div>
+        <div class="col-2">
+          <img src="img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <section class="first-choice" id="about">
+      <h1><span>D</span>EO COMPANY<span>'S</span></h1>
+
+      <h2>First-choice and Website Design Agency focused on Business Growth</h2>
+      <p>
+        Business growth is your number one goal, and helping you succeed is
+        ours. As an expert in content creation, website design, and search
+        engine optimization (SEO), we are well equipped to help you win over
+        your customers and beat your competitors.
+      </p>
+    </section>
+
+    <section class="services">
+      <div class="row">
+        <div class="col-2 pad">
+          <h2 style="font-size: 22px; line-height: 30px">
+            Our Expertise Goes Far Beyond 
+            Placing a Site on The Internet
+          </h2>
+        </div>
+        <div class="col-2 pad">
+          <p class="border" style="font-size: 1.5em">
+            With over 100 hundred active websites on the internet, the key to
+            standing out & gaining customers’ attention is delivering
+            up-to-date, relevant content on visually appealing web pages that
+            function properly. This is the anchor on which we operate.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 pad">
+          <i class="fa fa-envira"></i>
+          <h2>Website Design</h2>
+          <p>
+            Our content-driven and fully customized website design <br />
+            meant to keep your audience hooked & on the page longer.
+          </p>
+        </div>
+        <div class="col-2 pad">
+          <i class="fa fa-tags"></i>
+          <h2>Website Developement</h2>
+          <p>
+            Looking past the aesthetics, we deliver fully functional mobile
+            responsive websites that represent your company in the best light.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 pad">
+          <i class="fa fa-bar-chart-o"></i>
+          <h2>Seo Optimization</h2>
+          <p>
+            We deliver and implement SEO strategies that give your business the
+            visibility, authority, and edge you are looking for.
+          </p>
+        </div>
+        <div class="col-2 pad">
+          <i class="fa fa-gear"></i>
+          <h2>Website Maintenance</h2>
+          <p>
+            A well-oiled machine is one that runs the best. Our maintenance &
+            Security services are meant to keep your site running like new.
+          </p>
+        </div>
+        <div class="col-2 pad">
+          <i class="fa fa-hashtag"></i>
+          <h2>Branding</h2>
+          <p>
+            We help you move the needle for every element that is associated
+            with your identity, giving you a specific & targeted perception with
+            your customers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-fail">
+      <h1>Not All Websites Are Successful | Many Fail</h1>
+      <br />
+      <p>
+        A good site is accessible, appealing, and contains elements that drive
+        <br />
+        both attention & traffic while promoting transactional value. See what
+        makes a website fail.
+      </p>
+      <br />
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="text">
+            <strong> Ineffective SEO </strong><br />
+            A cluttered, confusing, and ugly website is difficult for users to
+            navigate and makes visitors likely to click away and never return.
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="text">
+          <strong>Underperforming Content</strong> <br />Many users today access
+          the internet with smartphones and tablets. <br />
+          A website lacking mobile responsiveness can be frustrating for
+          visitors, resulting in high bounce rates and lower conversions.
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="text">
+          <strong>Poor User Experience</strong><br />Many websites are not
+          optimized for specific keywords and phrases that bring organic traffic
+          to the front door, which is the bread & butter of a good site.
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="text">
+          <strong>Lack of Mobile Responsiveness</strong><br />
+          Many bad sites use plain, unoriginal, and boring content that is
+          outdated. visitors will hastily leave these websites for high-quality,
+          informative, and engaging content from competitors.
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="text">
+          <strong> Slow Loading</strong><br />A slow loading website is the
+          fastest way to lose traffic and Google rankings because users will
+          leave immediately in search of a faster site.
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="text">
+          <strong> Bad Calls to Action (CTAs)</strong><br />A poorly planned
+          website does not have effective CTAs, which cause customers leave the
+          site without taking any action at all.
+        </div>
+      </div>
+
+      <br />
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </section>
+
+    <section class="first-choice">
+      <h2 style="color: green">Ready to Turn Your Ideas into Reality?</h2>
+      <p style="font-size: 18px">
+        As one of the top Deo web design agencies, we are poised to help
+        place your company on the map. Find out how!
+      </p>
+      <button class="btn">Get Started <span>⟶</span></button>
+    </section>
+
+    <section class="why-choose">
+      <div class="row">
+        <div class="col-2">
+          <img
+            src="img/630245eda65dd92a20114007_jason-goodman-0K7GgiA8lVE-unsplash.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-2 pad">
+          <h1>Why Choose Us</h1>
+          <br />
+          <p>
+            Your website is often the first point of contact for your business
+            and first impressions are everything. We get to know you and your
+            brand, ensuring every aspect of your website reflects who you are,
+            what you do, and who you appeal to. <br />
+            Excellent design and development are just the beginning. We use the
+            latest technologies and techniques to make sure your website not
+            only looks good but also performs at its best. We test and optimize
+            your site to ensure it runs smoothly and effectively. <br />
+            Our process does not stop at your website launch. As the digital
+            landscape evolves, we offer ongoing support and maintenance to keep
+            your website current and relevant, meeting the needs of your
+            business and blowing the competition out of the water.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="get">
+      <h1>
+        What you get when <br />
+        you work with us
+      </h1>
+      <br />
+      <div class="get-container">
+        <div class="get-child">
+          <h2 style="font-size: 1.5em; color: var(--textheader2)">
+            Increased online <br> visibility
+          </h2>
+          <p class="border">
+            Get discovered easier with <br> better organic searches
+          </p>
+
+          <h2 style="font-size: 1.5em; color: var(--textheader2)">
+            Strong <br> Brand Identity
+          </h2>
+          <p class="border">
+            Create and deliver a compelling <br> story to elicit emotion
+          </p>
+        </div>
+
+        <div class="get-child">
+        <h2 style="font-size: 1.5em; color: var(--textheader2)">
+          Better User Experience
+        </h2>
+        <p class="border">
+          Become the place users go to find <br> exactly what they seek
+        </p>
+
+        <h2 style="font-size: 1.5em; color: var(--textheader2)">
+          Increased <br> customer Loyalty
+        </h2>
+        <p class="border">
+          They will keep coming back because <br>you over-deliver
+        </p>
+        </div>
+
+        <div class="">
+        <h2 style="font-size: 1.5em; color: var(--textheader2)">
+          Increased Revenue
+        </h2>
+        <p class="border">
+          The circle will complete itself as your sales begin to soar
+        </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="operate">
+      <div class="row">
+        <div class="col-2 pad">
+          <h1>How we operate</h1>
+          <p>
+            We start by understanding your business and goals so we can develop
+            a customized plan to help you achieve them. Deo company handles
+            all the project’s moving parts, from design and development to SEO
+            and maintenance so you can focus on customers & growth.
+          </p>
+          <br />
+          <h2>What you can expect in our process</h2>
+          <br />
+          <br />
+          <img src="img/back unsplash.jpg" alt="" />
+        </div>
+        <div class="col-2 pad">
+          <div class="operate-boxes">
+            <h2 class="box-no">01</h2>
+            <br />
+            <h3>Discovery & Planning</h3>
+            <br />
+            <p>
+              Before starting any project, we employ extensive research to
+              understand your end-users and their behaviors, motivations, and
+              needs. This helps determine your user’s journey early in the
+              design process.
+            </p>
+          </div>
+          <div class="operate-boxes">
+            <h2 class="box-no">02</h2>
+            <br />
+            <h3>Content Creation</h3>
+
+            <br />
+            <p>
+              Content is the most important part of any project and can
+              make-or-break the whole thing. We take this part seriously and
+              really turn up the volume here.
+            </p>
+          </div>
+          <div class="operate-boxes">
+            <h2 class="box-no">03</h2>
+            <br />
+            <h3>UI/UX Design</h3>
+            <br />
+            <p>
+              We combine the use of visual imagery, color, form, and typography
+              to create an aesthetically pleasing design that aligns with your
+              brand and your audience.
+            </p>
+          </div>
+          <div class="operate-boxes">
+            <h2 class="box-no">04</h2>
+            <br />
+            <h3>Development</h3>
+            <br />
+            <p>
+              This is where everything comes together. Our development experts
+              take all the moving parts and layer them decisively into the
+              perfect website.
+            </p>
+          </div>
+          <div class="operate-boxes">
+            <h2 class="box-no">05</h2>
+            <br />
+            <h3>Testing</h3>
+            <br />
+            <p>
+              Our user experience professionals test your designs throughout the
+              entire process. We release prototypes for your approval at
+              multiple checkpoints during the design process.
+            </p>
+          </div>
+          <div class="operate-boxes">
+            <h2 class="box-no">06</h2>
+            <br />
+            <h3>Launch</h3>
+            <br />
+            <p>
+              Once everything is complete, we will launch your site and hand
+              over all deliverables to you. Depending on your needs, we will
+              maintain the site for you, or hand it over with the other
+              deliverables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="row">
+        <div class="col-2 pad">
+          <h1>Ready to get Started</h1>
+          <h4>
+            Contact us today using the form below and let's discuss how we can
+            help your business succeed online.
+          </h4>
+        </div>
+        <div class="col-2 pad">
+          <form action="">
+            <label for="">Name*</label>
+            <input type="text" required>
+            <label for="">Email Address*</label>
+            <input type="text" required>
+            <label for="">Social Address</label>
+            <input type="text" placeholder="Linkedin , Telegram etc ">
+            <label for="">What can i do for you*</label><textarea required name="" id="" cols="30" rows="10" placeholder="E.g I want a website for my Business"></textarea>
+            <button class="btn2" type="submit
+            ">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+       <div class="footer">
+      <div class="footer-text">
+      <p>We start by understanding your business and goals so we can develop
+            a customized plan to help you achieve them. Deo company  handles
+            all the project’s moving parts, from design and development to SEO
+            and maintenance so you can focus on customers & growth.</p>
+      </div>
+    
+      <div class="row">
+      <div class="footer-box">
+        <img src="img/icon1.png" alt=""> <br>
+        <h5>+234 7066170536</h5>
+      </div>
+      <div class="footer-box">
+        <img  src="img/icon2.png" alt=""> <br>
+        <h5>Enugu, Enugu South L.G.A,Nigeria</h5>
+      </div>
+      <div class="footer-box">
+        <img src="img/icon3.png" alt=""> <br>
+        <h5>ededivine001@gmail.com</h5>
+      </div>
+        </div>
+     <div class="footer-icon">
+      <div class="icon"><a href=""><i class="fa fa-facebook"></i></div></a>
+      <div class="icon"><a href=""><i class="fa fa-twitter"></i></div></a>
+      <div class="icon"><a href=""><i class="fa fa-linkedin"></i></div></a>
+      <div class="icon"><a href=""><i class="fa fa-instagram"></i></div>
+     </div></a>
+      <hr />
+      <p class="copyright">&COPY; Copyright All Right Rerserved | DEO WEBDESIGN AGENCY 2023</p>
+    </div>
+  </body>
+  <script>
+    // Script for navigation bar
+    var menuitems = document.getElementById("menuitems")
+
+    menuitems.style.maxHeight = "0px"
+
+    function menutoggle() {
+      if (menuitems.style.maxHeight == "0px") {
+        menuitems.style.maxHeight = "200px"
+      } else {
+        menuitems.style.maxHeight = "0px"
+      }
+    }
+    // script for why websites fail
+    var slideIndex = 1
+    showSlides(slideIndex)
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides((slideIndex += n))
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides((slideIndex = n))
+    }
+
+    function showSlides(n) {
+      var i
+      var slides = document.getElementsByClassName("mySlides")
+      var dots = document.getElementsByClassName("dot")
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "")
+      }
+      slides[slideIndex - 1].style.display = "block"
+      dots[slideIndex - 1].className += " active"
+    }
+  </script>
+</html>
