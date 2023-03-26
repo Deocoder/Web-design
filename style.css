@@ -5,8 +5,17 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:eee;
+}
+
+@font-face{
+  src: url(/BAUHS93.TTF);
+  font-family: deo;
+}
+
+@font-face{
+  src: url(/GIL_____.TTF);
+  font-family:eee;
 }
 
 html {
@@ -28,6 +37,7 @@ html {
 /* BODY */
 body {
   font-size: 13px;
+  overflow-x: hidden;
 }
 
 /* CONTAINER */
@@ -150,12 +160,20 @@ nav ul li a:active {
 .col-2 img {
   max-width: 100%;
   margin-inline: auto;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* bo
+  x-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.fadeIn{
+  animation:fadeIn;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
 }
 
 .col-2 h1 {
   font-size: 30px;
   font-weight: bolder;
+  font-family: deo;
   margin: 20px 0;
 }
 .col-2 h3 {
@@ -177,6 +195,7 @@ nav ul li a:active {
   line-height: 25px;
 }
 
+
 .col-2 i {
   padding: 5px;
   color: var(--text-header2);
@@ -184,7 +203,7 @@ nav ul li a:active {
 }
 
 .col-2 p {
-  font-size: 12px;
+  font-size: 14.5px;
   line-height: 25px;
 }
 
@@ -227,7 +246,8 @@ header {
 
 .first-choice h1 {
   font-size: 5em;
-  font-family: cursive;
+    font-family: deo;
+
 }
 
 .first-choice h1 span {
@@ -393,8 +413,7 @@ header {
   text-align: center;
 }
 .why-fail p {
-  font-weight: 600;
-  line-height: 2em;
+  font-size: 15.5px;
 }
 /*WHY_FAIL ENDs  */
 
@@ -448,9 +467,7 @@ header {
 /* cta */
 .cta {
   margin: 4em auto;
-  /* background-image: url(img/loader.png); */
   object-fit: cover;
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -466,52 +483,38 @@ form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.inputbox {
-  position: relative;
-  margin: 30px 0px;
+
+
+/* form */
+form input {
+  margin-top: 10px;
+  margin-bottom: 20px;
   width: 100%;
-  border-bottom: 2px solid var(--background);
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  border: 1px solid var(--background);
+  background-color: transparent;
 }
 
-.inputbox ::placeholder {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-  color: var(--text);
-  pointer-events: none;
-  font-size: 1em;
-  transition: 0.5s;
-}
-
-/* .inputbox input:focus ~ label,
-.inputbox input:focus ~ :valid{
-  top:-5px;
-} */
-
-.inputbox input {
+form textarea {
+  margin-top: 10px;
+  outline: none;
+  margin-bottom: 20px;
   width: 100%;
-  height: 50px;
+  padding: 15px;
+  border: 1px solid var(--background);
+  border-radius: 5px;
+  height: 100px;
+  color: #fff;
   background-color: transparent;
-  padding: 0 35px 0 5px;
-  border: none;
-  outline: none;
 }
 
-.inputbox .fa {
-  position: absolute;
-  color: var(--text);
-  right: 8px;
-  top: 20px;
+::placeholder{
+  color: #fff;
+  font-size: 14px;
 }
-
-/* form input,
-textarea {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  border-bottom: 1px solid var(--text-header);
-} */
 
 /* footer */
 .footer {
@@ -653,3 +656,16 @@ a {
   }
 }
 /* thankyoupage ends here */
+
+.box{
+   transform: translateX(400%);
+  transition: all 0.7s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box.show{
+    transform: translateX(0);
+}
